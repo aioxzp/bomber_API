@@ -27,7 +27,7 @@ class Bomber:
 			return False
 
 	def getproxy(self):
-		proxy_scrape_url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all"
+		proxy_scrape_url = "https://raw.githubusercontent.com/aioxzp/call1/main/proxy.txt?token=GHSAT0AAAAAAB5RUIEMGT7COD3Q67AEL5ZGY7CFTHA"
 		try:
 			proxy_request = requests.get(proxy_scrape_url)
 		except:
