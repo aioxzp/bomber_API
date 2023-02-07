@@ -29,7 +29,7 @@ class Bomber:
 	def getproxy(self):
 		proxy_scrape_url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all"
 		try:
-			proxy_request = requests.get(proxy_scrape_url, Timeout =  10)
+			proxy_request = requests.get(proxy_scrape_url)
 		except:
 			return False
 		proxylist =  proxy_request.text.split()
